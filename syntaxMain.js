@@ -9,6 +9,7 @@ var b = 0;
 var c = "";
 while (a.charAt(b) !== ":") {
     c = c.concat(a.charAt(b));
-    b++;
+    b ++;
 };
+b =+ 2;
 console.log(c);
