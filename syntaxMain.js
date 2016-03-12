@@ -7,7 +7,7 @@
 var a = "*: lowercase";
 var b = 0;
 var c;
-while (a[b] !== ":" || b === a.length) {
-  b++;
-  c += a[b];
+while (a.charAt(b) !== ":" || b === a.length) {
+  c += a.charAt(b);
+    b++;
 };
