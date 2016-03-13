@@ -4,7 +4,7 @@
 *   * Licence: Creative Commons Attribution-ShareAlike 4.0 International Licence
 \* */
 
-var a = "div: load;";
+var a = "text: uppercase;";
 var b = 0;
 var c = "";
 var d = "";
@@ -20,6 +20,11 @@ if (b === a.length) {
          d = d.concat(a.charAt(b));
          b ++;
     }
+    /*
     console.log(c);
     console.log(d);
+    */
+    if (d === "uppercase") {
+        console.log(c.toUpperCase());
+    };
 };
