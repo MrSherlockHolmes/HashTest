@@ -4,12 +4,22 @@
 *   * Licence: Creative Commons Attribution-ShareAlike 4.0 International Licence
 \* */
 
-var a = "div: load";
+var a = "div: load;";
 var b = 0;
 var c = "";
-while (a.charAt(b) !== ":") {
+var d = "";
+while (a.charAt(b) !== ":" || b === a.length) {
     c = c.concat(a.charAt(b));
     b ++;
 };
-b =+ 2;
-console.log(c);
+if (b === a.length) {
+    console.log("Error: Colon not found.")
+} else {
+    b += 2;
+    while (a.charAt(b) !== ";" || b === a.length) {
+         d = d.concat(a.charAt(b));
+         b ++;
+    }
+    console.log(c);
+    console.log(d);
+};
